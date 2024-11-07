@@ -28,4 +28,5 @@ model Role {
 
 model Transaction {
   id Int @id @default(autoincrement())
+  name String @unique
 }
