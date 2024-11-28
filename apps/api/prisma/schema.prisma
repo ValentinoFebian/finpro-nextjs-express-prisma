@@ -10,6 +10,19 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Transaction {
-  id Int @id @default(autoincrement())
+model User {
+  UserID          Int        @id @default(autoincrement())
+  firstname       String     @db.VarChar(50)
+  lastname        String     @db.VarChar(50)
+  email           String     @unique
+  password        String
+  referralCode  String     @unique 
+  created_at      DateTime   @default(now())
+  updated_at      DateTime @updatedAt
+  role            RoleType @default(Attendee) 
+}
+
+enum RoleType {
+  Attendee
+  Organizer
 }

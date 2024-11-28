@@ -10,18 +10,19 @@
     "test": "npx cypress verify & cypress run --component"
   },
   "dependencies": {
-    "next": "14.0.4",
+    "cross-env": "^7.0.3",
+    "husky": "^9.1.7",
+    "next": "15.0.3",
     "react": "^18",
-    "react-dom": "^18",
-    "cross-env": "^7.0.3"
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "@types/node": "^20",
+    "@types/node": "^22",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "cypress": "^13.6.2",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.4",
+    "cypress": "^13.16.0",
+    "eslint": "^9",
+    "eslint-config-next": "15.0.3",
     "typescript": "^5"
   }
 }
