@@ -26,3 +26,12 @@ enum RoleType {
   Attendee
   Organizer
 }
+
+enum EventCategory {
+  Sport
+  Music
+  Theater
+  Workshop
+  Conference
+  Festival
+}
